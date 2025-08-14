@@ -1,5 +1,4 @@
-// in schema_generator.go
-package mcp
+package jsonschema
 
 import (
 	"encoding/json"
@@ -9,8 +8,8 @@ import (
 	"github.com/invopop/jsonschema"
 )
 
-// generateSchemaForType uses reflection to create a JSON schema for a given Go struct type.
-func generateSchemaForType(t reflect.Type) (json.RawMessage, error) {
+// GenerateSchemaForType uses reflection to create a JSON schema for a given Go struct type.
+func GenerateSchemaForType(t reflect.Type) (json.RawMessage, error) {
 	// If the type is a pointer, get the element type it points to.
 	if t.Kind() == reflect.Ptr {
 		t = t.Elem()

@@ -1,4 +1,4 @@
-package mcp
+package protocol
 
 import (
 	"encoding/json"
@@ -197,11 +197,4 @@ type CallToolResult struct {
 type ContentBlock struct {
 	Type string `json:"type"`
 	Text string `json:"text,omitempty"`
-}
-
-// to define and register their tools.
-type ToolRegistration struct {
-	Definition Tool
-	// Handler is the strongly-typed function that implements the tool.
-	Handler interface{}
 }

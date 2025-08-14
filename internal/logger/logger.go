@@ -1,5 +1,4 @@
-// mcp/logger.go
-package mcp
+package logger
 
 import (
 	"fmt"
@@ -30,7 +29,7 @@ func (f *GinStyleFormatter) Format(entry *log.Entry) ([]byte, error) {
 	timestamp := entry.Time.Format("2006/01/02 - 15:04:05")
 
 	// Uppercase and pad log level for alignment
-	level := fmt.Sprintf("%-5s", strings.ToUpper(entry.Level.String()))
+	level := fmt.Sprintf("% -5s", strings.ToUpper(entry.Level.String()))
 
 	// Format final message
 	return []byte(fmt.Sprintf("%s[%s] %s%s | %s\n",
