@@ -1,6 +1,6 @@
 # Go MCP SDK
 
-This is a Go SDK for building servers that comply with the Multi-Capability Protocol (MCP). It provides the basic building blocks for creating an MCP server, registering tools, and handling requests.
+This is a Go SDK for building servers that comply with the Model Context Protocol (MCP). It provides the basic building blocks for creating an MCP server, registering tools, and handling requests.
 
 ## Disclaimer
 
@@ -11,7 +11,7 @@ This SDK is currently under active development and should be considered a work i
 *   **MCP Server**: A server that can handle MCP requests.
 *   **Tool Registration**: An easy way to register tools and their handlers.
 *   **JSON Schema Generation**: Automatic generation of JSON schemas for tool inputs.
-*   **Structured Logging**: Colored, structured logging for easy debugging.
+*   **Structured Logging**: Structured logging for easy debugging.
 
 ## Getting Started
 
